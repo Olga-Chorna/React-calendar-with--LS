@@ -1,0 +1,58 @@
+ul {
+  width: 98%;
+  list-style: none;
+  padding: 0 0.25rem 0.25rem;
+}
+
+ul li::before {
+  content: "\200B";
+}
+
+.task {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.5rem 0 0.5rem 0.5rem;
+  margin: 0.25rem 0;
+  background-color: #787474;
+}
+
+.task:first-child {
+  margin: 0;
+}
+
+.task input[type="checkbox"] {
+  text-align: center;
+  width: 2rem;
+  width: 45px;
+  min-width: 45px;
+  height: 2.5rem;
+  height: 48px;
+  min-height: 48px;
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+
+.task input[type="checkbox"]:focus + label {
+  text-decoration: underline;
+}
+
+.task > label {
+  font-size: 1.25rem;
+  flex-grow: 1;
+}
+
+.task svg {
+  width: 48px;
+  min-width: 48px;
+  height: 36px;
+  font-size: 1rem;
+  color: rgb(33, 36, 38);
+  cursor: pointer;
+}
+
+.task svg:focus, 
+.tasksvg:hover {
+  color: red;
+  outline: none;
+}

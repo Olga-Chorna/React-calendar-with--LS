@@ -1,0 +1,47 @@
+.addForm {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0.5rem 0 0;
+  padding: 0 0.5rem 0.25rem;
+  /* border-bottom: 1px solid #eee; */
+}
+
+.addForm input[type='text'] {
+  flex-grow: 1;
+  max-width: calc(100% - 80px);
+  min-height: 48px;
+  font-size: 1rem;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  margin-right: 0.25rem;
+  outline: none;
+}
+
+button {
+  min-height: 48px;
+  min-width: 48px;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  background-color: aliceblue;
+  color: rgb(88, 88, 95);
+  cursor: pointer;
+}
+
+button:focus, 
+button:hover {
+  color: white;
+  background-color: rgb(68, 76, 68);
+  outline: none;
+}
+
+.searchForm {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0.25rem 0 0;
+  padding: 0 0.5rem 0.25rem;
+  border-bottom: 1px solid #eee;
+}
+
